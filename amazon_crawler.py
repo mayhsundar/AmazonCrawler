@@ -1,11 +1,7 @@
 import amazon_config as config;
-from selenium.webdriver.common.keys import Keys
-import time
-from selenium.webdriver.support.ui import WebDriverWait 
-from selenium.webdriver.support import expected_conditions as EC 
-from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 from datetime import datetime
+import time
 import json
 
 class MakeReport:
@@ -43,6 +39,7 @@ class AmazonAPI:
         options = config.get_driver_options()
         config.set_ignore_certificate_error(options)
         config.set_browser_as_incognito(options)
+        config.set_browser_as_headless(options)
         self.driver = config.get_chrome_driver(options)
         pass
         
