@@ -1,7 +1,7 @@
 from selenium import webdriver
 
 DIRECTORY = 'reports'
-SEARCH_TERM = 'boat airpods 441'
+SEARCH_TERM = 'pubg pc'
 BASE_URL = "http://www.amazon.in/"
 
 def get_chrome_driver(options):

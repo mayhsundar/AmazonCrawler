@@ -51,8 +51,7 @@ class AmazonAPI:
         links = []
         for page in range(1, self.pages+1):
             #print(self.mainUrl+"&page="+str(page))
-            links = [*self.getProductsLinks(self.mainUrl+"&page="+str(page))]
-        
+            links.extend(self.getProductsLinks(self.mainUrl+"&page="+str(page)))
         if not links:
             print(" Crawler got into a problem!!!, so stopped")
             return
