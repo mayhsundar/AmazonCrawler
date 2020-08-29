@@ -11,7 +11,7 @@ Make sure to download correct chromedriver for your current chrome browser - htt
 ### Setup Python Virtual Environment
 ```buildoutcfg
 python3 -m venv venv
-. venv/bin/activate
+. venv/Sources/activate
 pip install -r requirements.txt
 ```
 ## Running Script
